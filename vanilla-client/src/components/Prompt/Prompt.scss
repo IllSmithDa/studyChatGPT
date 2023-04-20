@@ -1,0 +1,42 @@
+.prompt-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: bisque;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+
+  input {
+    margin-right: 5px;
+    width: 300px;
+    font-size: 17px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+  }
+  button {
+    margin-left: 5px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0;
+    height: 38px;
+    cursor: pointer;
+  }
+
+}
+@media (max-width: 800px) {
+  .prompt-section{
+    input {
+      width: 80vw;
+    }
+    button {
+      width: 10vw;
+      padding: 2px 4px;
+      font-size: 5px;
+    }
+  }
+}

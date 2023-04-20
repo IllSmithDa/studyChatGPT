@@ -1,0 +1,42 @@
+#conversation-container {
+  margin-top: 50px;
+  max-height: 70%;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: 250px;
+  width: 100%;
+}
+.conversation-list {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  div {
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  div:first-child {
+    margin-right: auto;
+    background-color: lightgreen;
+  }
+  div:last-child {
+    margin-left: auto;
+    background-color: lightblue;
+  }
+}
+
+@media (max-width: 800px) {
+  #conversation-container {
+    max-height: 60%;
+  }
+  .conversation-list {
+    width: 90%;
+    div {
+      width: 75%;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  }
+}
